@@ -4,4 +4,6 @@ LABEL vendor="github.com/vorstenbosch/scrapi" version="1.0.0"
 
 RUN go get github.com/vorstenbosch/scrapi/scrapi
 
-ENTRYPOINT [ "${GOPATH}/bin/scrapi" ]
+ENTRYPOINT [ "/go/bin/scrapi"]
+
+CMD ["${SCRAPI_CONFIG_FILE}"]
