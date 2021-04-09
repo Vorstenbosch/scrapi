@@ -1,0 +1,9 @@
+{{- if .Values.scrapeConfig.useConfigMap -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "scrapi.fullname" . }}-scrape-config
+data: 
+  config.yaml: |
+{{ .Values.scrapeConfig.config | indent 4 }}
+{{- end }}
