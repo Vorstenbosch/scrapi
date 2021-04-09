@@ -1,4 +1,4 @@
-module github.com/vorstenbosch/scrapi
+module github.com/vorstenbosch/scrapi/scrapi
 
 go 1.15
 
