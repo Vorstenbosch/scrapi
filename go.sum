@@ -1,0 +1,12 @@
+github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
+github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
+github.com/vorstenbosch/scrapy v0.0.0-20210408145832-6fbee17598c1 h1:eFaL7Bf6E840zTagvThQBC/al3r8vfYNr9Kyj26m4to=
+github.com/vorstenbosch/scrapy v0.0.0-20210408145832-6fbee17598c1/go.mod h1:YUH5r5uoNcuMNr18oF8RFpif8udpmuYlzao1zS/r2QA=
+github.com/vorstenbosch/scrapy v0.0.0-20210409081404-ee592ffef03f h1:8TNejPRAgDMQq1sNqKuOMQPvvaz9Lzj60fBn9HaVvCs=
+github.com/vorstenbosch/scrapy v0.0.0-20210409081404-ee592ffef03f/go.mod h1:YUH5r5uoNcuMNr18oF8RFpif8udpmuYlzao1zS/r2QA=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/yaml.v2 v2.4.0 h1:D8xgwECY7CYvx+Y2n4sBz93Jn9JRvxdiyyo8CTfuKaY=
+gopkg.in/yaml.v2 v2.4.0/go.mod h1:RDklbk79AGWmwhnvt/jBztapEOGDOx6ZbXqjP6csGnQ=
+launchpad.net/gocheck v0.0.0-20140225173054-000000000087/go.mod h1:hj7XX3B/0A+80Vse0e+BUHsHMTEhd0O4cpUHr/e/BUM=
+launchpad.net/xmlpath v0.0.0-20130614043138-000000000004 h1:B8nNZBUrx8YufDCAJjvO/lVs4GxXMQHyrjwJdJzXMFg=
+launchpad.net/xmlpath v0.0.0-20130614043138-000000000004/go.mod h1:vqyExLOM3qBx7mvYRkoxjSCF945s0mbe7YynlKYXtsA=
