@@ -38,7 +38,7 @@ func TestHealthEndpoint(t *testing.T) {
 
 func TestScrapeResultEndpoint(t *testing.T) {
 	// Given
-	expectedResult := "\"Error\":null"
+	expectedResult := "{\"http://localhost:5555\":[{\"Name\":\"test\",\"TypeOfSelector\":\"xpath\",\"Value\":\"//div\",\"Result\":\"Hello world\",\"Error\":null,\"Time\":"
 
 	// When
 	// Server is already running via the setup method
@@ -55,7 +55,7 @@ func TestScrapeResultEndpoint(t *testing.T) {
 	body, err := ioutil.ReadAll(response.Body)
 
 	if !strings.Contains(string(body), expectedResult) {
-		t.Errorf("The 'scrape-result' endpoint did not return a json object containing '%s' but was '%v'", expectedResult, body)
+		t.Errorf("The 'scrape-result' endpoint did not return a json object containing '%s' but was '%v'", expectedResult, string(body))
 	}
 }
 
