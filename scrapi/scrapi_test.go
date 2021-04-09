@@ -16,7 +16,7 @@ var server http.Server
 
 func TestHealthEndpoint(t *testing.T) {
 	// Given
-	expectedResult := "I am happy :)"
+	expectedResult := "I am healthy :)"
 
 	// When
 	// Server is already running via the setup method

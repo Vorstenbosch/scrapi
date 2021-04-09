@@ -14,8 +14,7 @@ import (
 
 func main() {
 	// Getting the scrape config file
-	configFile := os.Args[1]
-	data, err := ioutil.ReadFile(configFile)
+	data, err := ioutil.ReadFile(os.Getenv("SCRAPI_CONFIG_FILE"))
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -37,7 +36,11 @@ func startServer(data []byte) {
 	v1Router := r.PathPrefix("/v1").Subrouter()
 
 	v1Router.HandleFunc("/healthy", func(w http.ResponseWriter, r *http.Request) {
-		io.WriteString(w, "I am happy :)")
+		if sb.IsRunning() {
+			io.WriteString(w, "I am healthy :)")
+		} else {
+			http.Error(w, "ScrapyBoss is not running", http.StatusFailedDependency)
+		}
 	})
 
 	v1Router.HandleFunc("/scrape-result", func(w http.ResponseWriter, r *http.Request) {
@@ -46,7 +49,7 @@ func startServer(data []byte) {
 			w.WriteHeader(http.StatusOK)
 			w.Write(b)
 		} else {
-			http.Error(w, "my own error message", http.StatusForbidden)
+			http.Error(w, "Failed to serialise the scrape data", http.StatusInternalServerError)
 		}
 	})
 
