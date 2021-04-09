@@ -53,6 +53,7 @@ func startServer(data []byte) {
 		}
 	})
 
+	log.Printf("Starting server version '%s'", os.Getenv("SCRAPI_VERSION"))
 	if os.Getenv("USE_TLS") == "true" {
 		err := http.ListenAndServeTLS(":8000", os.Getenv("TLS_CERT"), os.Getenv("TLS_KEY"), r)
 		if err != nil {
