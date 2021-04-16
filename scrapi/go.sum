@@ -1,7 +1,7 @@
 github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
 github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
-github.com/vorstenbosch/scrapy v0.0.0-20210409122637-8f084a325910 h1:KRX+RwSpyxcn3D/Pz9LilJxAw3R8n/InqQ2/xsqSlqI=
-github.com/vorstenbosch/scrapy v0.0.0-20210409122637-8f084a325910/go.mod h1:WSZ954DmS6bj7qZ4u8z1qNCjo1I2HuSsJ7hztealRN4=
+github.com/vorstenbosch/scrapy v1.0.0 h1:bVMNTy9/qbXjf57qoJedgdPS8oCeZXfVCjCo+20uEsg=
+github.com/vorstenbosch/scrapy v1.0.0/go.mod h1:WSZ954DmS6bj7qZ4u8z1qNCjo1I2HuSsJ7hztealRN4=
 golang.org/x/net v0.0.0-20210405180319-a5a99cb37ef4 h1:4nGaVu0QrbjT/AK2PRLuQfQuh6DJve+pELhqTdAj3x0=
 golang.org/x/net v0.0.0-20210405180319-a5a99cb37ef4/go.mod h1:p54w0d4576C0XHj96bSt6lcn1PtDYWL6XObtHCRCNQM=
 golang.org/x/sys v0.0.0-20201119102817-f84b799fce68/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=

@@ -75,7 +75,9 @@ func setup() {
 	}()
 
 	yamlConfig := `
-scrapeintervalinseconds: 5
+scrapeintervalinseconds: 2
+idleconnectionpool: 1
+scrapetimeoutinseconds: 1
 scrapeendpoints: 
   - endpoint: http://localhost:5555
     selectors:

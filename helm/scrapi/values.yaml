@@ -88,6 +88,8 @@ appConfig:
 scrapeConfig:
   useConfigMap: true
   config: |
+    idleconnectionpool: 10
+    scrapetimeoutinseconds: 5
     scrapeintervalinseconds: 60
     scrapeendpoints: 
       - endpoint: https://www.beleggen.nl/koersen/aex.aspx
